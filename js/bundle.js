@@ -5,17 +5,24 @@
     this.$preStageLights = document.getElementById('pre-stage');
     // reset the christmas tree every time it's initialized
     this.reset();
-  },
-  RaceTrack         = function() {
+  };
+  
+  ChristmasTree.prototype.reset = function() {
+    // append the css on class to the pre stage lights
+    // so that they show up as yellow
+    this.$preStageLights.className += " on";
+  };
+  
+  var RaceTrack         = function() {
     // this class manages the race track
-  },
-  Dragster          = function() {
+  };
+  var Dragster          = function() {
     // grab the car element
     this.$el = document.getElementById('dragster');
     // set the starting position of the dragster
     this.$el.style.left = "0px";
-  },
-  Game              = function() {
+  };
+  var Game              = function() {
     // this class manages game state
     // initialize a christmas tree
     this.tree = new ChristmasTree();
@@ -25,12 +32,6 @@
     this.dragster = new Dragster();
 
     this.attachListeners();
-  };
-
-  ChristmasTree.prototype.reset = function() {
-    // append the css on class to the pre stage lights
-    // so that they show up as yellow
-    this.$preStageLights.className += " on";
   };
 
   Game.prototype.attachListeners = function() {
