@@ -49,5 +49,5 @@
     this.$el.style.left = parseInt(this.$el.style.left, 10) + 1 + "px";
   };
 
-  var g = new Game();
+  new Game();
 })();
