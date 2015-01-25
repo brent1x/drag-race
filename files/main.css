@@ -1,0 +1,131 @@
+/******* GENERAL ******/
+
+.center {
+  margin: 0 auto;
+}
+
+.abs {
+  top: 220px;
+  position: absolute;
+}
+
+body {
+  background-image: url("../images/tms2.jpg");
+  background-color: transparent;
+  background-size: cover;
+}
+
+/******* XMAS TREE ******/
+
+#christmas-tree {
+  margin: 20px auto;
+  width: 140px;
+  background: black;
+  color: white;
+  text-align: center;
+  font-size: 0.9em;
+  border: 8px solid #ccc;
+}
+
+.lights {
+  border-bottom: 2px solid #ccc;
+}
+
+.lights div {
+  display: inline-block;
+  background: gray;
+}
+
+#pre-stage div, #stage div {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+#pre-stage.on div, #stage.on div {
+  background: yellow;
+}
+
+#start-lights1 div, #start-lights2 div, #start-lights3 div {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+#start-lights1.on div, #start-lights2.on div, #start-lights3.on div {
+  background: orange;
+}
+
+#go-lights div {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+#go-lights.on div {
+  background: green;
+}
+
+#false-lights div {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+#false-lights.on div {
+  background: red;
+}
+
+/******* RACETRACK ******/
+
+#racetrack {
+  margin-top: 101px;
+  background-image: url("../images/bg.jpg");
+  background-size: 50%;
+  width: 90%;
+  height: 240px;
+  background-color: rgba(36, 143, 0, .9);
+}
+
+#strip {
+  width: inherit;
+  height: 240px;
+}
+
+.place {
+  height: 240px;
+  width: 10px;
+  min-height: 88px;
+  min-width: 10px;
+}
+
+#pre-staged {
+  left: 0px;
+  width: 120px;
+  border-right: 10px solid rgba(255, 255, 38, .95);
+  background-color: rgba(255, 64, 64, .8);
+}
+
+#finish {
+  right: 0px;
+  width: 240px;
+  background: url(../images/checks.png) no-repeat;
+  border-left: 10px solid rgba(255, 255, 38, .95);
+  background-color: rgba(0, 0, 0, .5);
+}
+
+#staged {
+  left: 120px;
+  width: 120px;
+  border-right: 10px solid rgba(255, 255, 38, .95);
+  background-color: rgba(255, 255, 38, .8);
+}
+
+#dragster {
+  background: url(../images/game_ratfink.png) no-repeat;
+  background-size: 75px 75px;
+  width: 75px;
+  height: 75px;
+  top: 300px;
+  z-index: 100;
+}
